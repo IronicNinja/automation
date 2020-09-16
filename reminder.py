@@ -4,13 +4,13 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 import pandas as pd
 from datetime import date, datetime, timedelta
 
-webhook = DiscordWebhook('https://discord.com/api/webhooks/737017721442533416/fn9KVJlGzTDulOhvNsjHViKFXDE03Wo6Y2-xzISnZjcGJ-YSJBCnHXBvDY3qNR4cujDV')
+webhook = DiscordWebhook('webhook link')
 
 today = datetime.strptime(str(date.today()).replace(' 00:00:00', ''), "%Y-%m-%d")
 
 df = pd.read_excel('ScholarshipDates.xlsx')
 
-embed = DiscordEmbed(title='Scholarship Reminders', description='<@&706946244869619723>', color=242424)
+embed = DiscordEmbed(title='Scholarship Reminders', description='description ID', color=242424)
 
 change_rate = 12
 
@@ -81,7 +81,7 @@ while True:
         ImportError, IndexError, KeyError, KeyboardInterrupt, MemoryError, NotImplementedError, OSError, OverflowError, ReferenceError,
         StopIteration, SyntaxError, IndentationError, TabError, SystemError, SystemExit, UnboundLocalError, UnicodeError, UnicodeEncodeError,
         UnicodeDecodeError, UnicodeTranslateError, ZeroDivisionError, ValueError):
-        embed1 = DiscordEmbed(title='THERE IS AN ERROR', description='<@&706946244869619723>', color=242424)
+        embed1 = DiscordEmbed(title='THERE IS AN ERROR', description='description ID', color=242424)
         webhook.add_embed(embed1)
         break
 
