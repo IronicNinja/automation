@@ -14,7 +14,7 @@ class harinbot():
         self.driver = webdriver.Chrome(r'C:\Users\evanz\Desktop\allbots\chromedriver', options=chrome_options)
 
     def filled(self, firstname, lastname, emailname):
-        self.driver.get('https://livesafe.jotform.com/202334123632846')
+        self.driver.get('link name')
 
         sleep(3)
         fname = self.driver.find_element_by_xpath('//*[@id="first_3"]')
